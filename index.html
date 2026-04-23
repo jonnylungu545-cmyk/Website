@@ -3,21 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site-ul Meu pe Render</title>
+    <title>Moldova Mea - Descoperă frumusețea acasă</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav>
-        <h1>Logo-ul Meu</h1>
-    </nav>
-    
-    <main>
-        <section id="hero">
-            <h2>Salut! Bine ai venit pe site-ul meu.</h2>
-            <p>Acest site este găzduit pe Render via GitHub.</p>
-            <button id="action-btn">Apasă-mă!</button>
-        </section>
-    </main>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">Moldova<span>Mea</span></div>
+            <ul class="nav-links">
+                <li><a href="#">Acasă</a></li>
+                <li><a href="#destinatii">Destinații</a></li>
+                <li><a href="#cultura">Cultură</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Descoperă Moldova</h1>
+            <p>De la Orheiul Vechi până la beciurile din Cricova, frumusețea e la ea acasă.</p>
+            <a href="#destinatii" class="btn-main">Începe explorarea</a>
+        </div>
+    </section>
+
+    <section id="destinatii" class="cards-section">
+        <div class="card">
+            <h3>Vinării Legendare</h3>
+            <p>Explorează cele mai mari galerii subterane din lume.</p>
+        </div>
+        <div class="card">
+            <h3>Peisaje Naturale</h3>
+            <p>Stâncile de la Orheiul Vechi și malurile Nistrului.</p>
+        </div>
+        <div class="card">
+            <h3>Tradiții vii</h3>
+            <p>Gustă din ospitalitatea moldovenească autentică.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Moldova Mea. Creat cu ❤️ pe Render.</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
