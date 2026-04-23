@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panou Admin - Moldova Mea</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .admin-container { max-width: 600px; margin: 50px auto; padding: 30px; background: white; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+        .admin-container h2 { margin-bottom: 20px; color: #2c3e50; text-align: center; }
+        input, textarea { width: 100%; padding: 12px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 8px; font-family: inherit; }
+        textarea { height: 100px; }
+        #btn-save { width: 100%; padding: 15px; background: #27ae60; color: white; border: none; border-radius: 8px; cursor: pointer; font-weight: bold; font-size: 16px; }
+        #btn-save:hover { background: #219150; }
+        .back-link { display: block; text-align: center; margin-top: 20px; color: #7f8c8d; text-decoration: none; }
+    </style>
+</head>
+<body>
+
+    <div class="admin-container">
+        <h2>Adaugă Eveniment Nou</h2>
+        
+        <label>Titlu Eveniment</label>
+        <input type="text" id="titlu" placeholder="Ex: Festivalul Vinului">
+        
+        <label>Oraș</label>
+        <input type="text" id="oras" placeholder="Ex: Chișinău">
+        
+        <label>Data și Ora</label>
+        <input type="text" id="data_ora" placeholder="Ex: 15 Octombrie, ora 18:00">
+        
+        <label>Descriere</label>
+        <textarea id="descriere" placeholder="Detalii despre eveniment..."></textarea>
+        
+        <label>Link Imagine (URL)</label>
+        <input type="text" id="imagine" placeholder="Lipește un link cu o poză">
+        
+        <label>Link Video (YouTube)</label>
+        <input type="text" id="video" placeholder="Link video (opțional)">
+        
+        <button id="btn-save">Publică pe Site</button>
+        
+        <a href="index.html" class="back-link">← Înapoi la site</a>
+    </div>
+
+    <script src="admin-script.js"></script>
+</body>
+</html>
